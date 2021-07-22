@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Words</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <div>
+        <form method="post">
+            <label>
+                <input type="text" name="url" placeholder="Input json url">
+            </label>
+            <button type="submit">Validate</button>
+        </form>
+    </div>
+    <h1>Words:</h1>
+    <ul>
+        {{#words}}
+            <li>{{.}}</li>
+        {{/words}}
+    </ul>
+</body>
+</html>
